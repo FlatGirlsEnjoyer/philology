@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation theory</title>
+</head>
+<body>
+     <div id="collaps">
+   <section>
+        <button id="toggle-classes" aria-expanded="false" aria-controls="classes-list">Classes</button>
+        <div id="classes-list" hidden>
+            <ul>
+                <li><a class="class" href="../cs/cs.html">Culture studies</a></li>
+                <li><a class="class" href="../bl/bl.html">British literature</a></li>
+                <li><a class="class" href="../concul/concul.html">Contemporary culture</a></li>
+                <li><a class="class" href="../enpl/enpl.html">Eng-Pol translation</a></li>
+                <li><a class="class" href="../lit/lit.html">Literature studies</a></li>
+                <li><a class="class" href="../lin/lin.html">Linguistics</a></li>
+                <li><a class="class" href="../lr/lr.html">Listening/Reading</a></li>
+                <li><a class="class" href="../phonetcs/phonetics.html">Phonetics</a></li>
+                <li><a class="class" href="../speaking/speaking.html">Speaking</a></li>
+                <li><a class="class" href="../struc/struc.html">Structures</a></li>
+                <li><a class="class" href="../syntax/syntax.html">Syntax</a></li>
+                <li><a class="class" href="../tran/tran.html">Translation theory</a></li>
+                <li><a class="class" href="../writing/writing.html">Writing</a></li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        const btn = document.getElementById('toggle-classes');
+        const list = document.getElementById('classes-list');
+        btn.addEventListener('click', () => {
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', (!expanded).toString());
+            list.hidden = expanded;
+        });
+    </script>
+    </div>
+</body>
+</html>

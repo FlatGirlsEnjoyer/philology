@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+header{
+    height: 200px;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    overflow: auto;
+    width: 70%;
+    float: right;
+    background-color: deepskyblue;
+}
+#collaps{
+    width: 30%;
+    background-color: darkgreen;
+    float: left;
+}

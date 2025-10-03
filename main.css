@@ -1,0 +1,9 @@
+header{
+    height: 480px;
+    width: 100%;
+    text-align: center;
+    object-fit: fill;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: x-large;
+}
